@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form action="Script URL" method="Get|Post">
+        <form action="proses.php" method="POST">
+            <fieldset style="background-color:rgb(252, 236, 99);">
+                <legend>Form</legend>
+                <div>
+                    <label>Nama Lengkap</label>
+                    <div>
+                        <input type="text" name="nama" value="" size="40" />
+                    </div>
+                </div>
+                <div>
+                    <label>Jenis Kelamin</label>
+                    <div>
+                        <input type="radio" name="jk" value="L" checked />Laki-laki
+                        <input type="radio" name="jk" value="P" checked />Perempuan
+                    </div>
+                </div>
+                <br>
+                    <input type="submit" value="Simpan" name="Proses" />
+                </br>
+            </fieldset>
+        </form>
+    </form>
+    <form method="post" action="/form.html">
+        <fieldset id="personal_information">
+            <legend>Form Biodata</legend>
+            <ol>
+                <li>
+                    <label for="name">Username</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="name">Id</label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <tr>
+                                <td valign="top">Tanggal Lahir</td>
+                                <td>
+                                   <input type="text" style="width: 25px" placeholder="dd">
+                                   <input type="text" style="width: 25px" placeholder="mm">
+                                   <input type="text" style="width: 50px" placeholder="yyyy">
+                                </td>
+                            </tr>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <div>
+                        <label>Alamat</label>
+                        <div>
+                            <textarea name="alamat_kirim:" rows="4" cols="30"></textarea>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <label>Kota
+                        <div>
+                            <select name="Kota">
+                                <optgroup> value=""></optgroup>
+                                <option value="">Pilih Sesuai Kota Anda</option>
+                                <option value="Jakarta">Jakarta</option>
+                                <option value="Surabaya">Surabaya</option>
+                                <option value="Depok">Depok</option>
+                                <option value="Bekasi">Bogor</option>
+                                <option value="Bekasi">Jogjakarta</option>
+                                <option value="Bekasi">Solo</option>
+                                <option value="Bekasi">Semarang</option>
+                            </select>
+                            <form>
+                            <br>
+                            <input type="submit" value="Select">
+                            </form>
+                        </div>			
+                    </div>
+                </li>
+            </ol>
+            <br>
+                <input type="submit" value="Submit">
+            </br>
+        </fieldset>
+    </form>
+    <br>
+    <form id="create_account" action="form.html" method="POST">
+        <fieldset id="signup">
+            <legend>Creat New Account</legend>
+            <ol>
+                <li>
+                    <label for="first_name">Name</label>
+                    <input id="first_name" type="text" autofocus name="first_name" placeholder="Rafi">
+                </li>
+                <li>
+                    <label for="last_name">Username</label>
+                    <input id="last_name" type="text" autofocus name="last_name" placeholder="Maulana">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="user@example.com">
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input id="password" type="password" name="password" value="" autocomplete="off" placeholder="8-10 characters">
+                </li>
+            </ol>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    </br>
+</body>
+</html>
